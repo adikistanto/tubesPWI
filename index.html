@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DCS Studio</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/slider.css" rel="stylesheet">
+		<link href="css/responsif.css" rel="stylesheet">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/responsiveslides.min.js"></script>	
+	</head>
+	<body id="home">
+		<div class="bingkai">
+			<div class="bingkai_atas">
+				<center class=""><a href="#home"><img class="logo_sembunyi" style="" src="images/dcs.png"/></a></center>
+				 <div class="tempat_logo">
+					<center><a href="#home"><img class="logo" style="" src="images/dcs.png"/></a></center>
+				</div>
+				<nav id="menu_atas">
+					  <a href="#home">home</a>
+					  <a href="#bidang1">menu</a>
+					  <a href="#bidang2">profil</a>
+					  <a href="#bidang3">layanan</a>
+					  <a href="#bidang4">karya</a>
+					  <a href="#bidang5">rekanan</a>
+					  <a href="#bidang6">kerja sama</a>
+					  <a href="#bidang7">kontak</a>
+				</nav>
+			</div>
+			<div class="bingkai_kanan"></div>
+			<div class="bingkai_bawah">
+				<center><br>&copytimpwi2014 </center>
+			</div>
+			<div class="bingkai_kiri">
+			</div>
+		</div>
+		<div class="bidang" style="padding-bottom:8%;background-size:100% 100%;background-image:url('images/dekstopbg.jpg');background-repeat: no-repeat;"id="dekstop">
+			<center><br><br><br><br>
+				<div class="kotak_tengah_isi">
+					<div class="callbacks_container">
+					  <ul class="rslides" id="slider4">
+						<li>
+						  <img src="images/slider/slider_1.png" alt="">
+						</li>
+						<li>
+						  <img src="images/slider/slider_2.png" alt="">
+						  <!--<p class="caption">This is another caption</p>-->
+						</li>
+						<li>
+						  <img src="images/slider/slider_3.png" alt="">
+						  <!--<p class="caption">The third caption</p>-->
+						</li>
+					  </ul>
+					</div>
+					<a class="explore_tombol"href="#bidang1">Explore</a>
+				</div><br><br>
+				
+			</center>
+		</div>
+		<!-- ================ menu ========================= -->
+		<div class="bidang" style="background:#454552;padding-bottom:10%"id="bidang1">
+			<center class="judul_tersembunyi">Menu</center>
+			<center>
+				<div class="kotak_menu_isi">
+					<a href="#bidang2" class="tombol_kotak_menu bgprofil"><div class="maskprofil"></div></a>
+					<a href="#bidang3" class="tombol_kotak_menu bglayanan"><div class="masklayanan"></div></a>
+					<a href="#bidang4" class="tombol_kotak_menu bgkarya"><div class="maskkarya"></div></a>
+					<a href="#bidang5" class="tombol_kotak_menu bgrekanan"><div class="maskrekanan"></div></a>
+					<a href="#bidang6" class="tombol_kotak_menu bgkerjasama"><div class="maskkerjasama"></div></a>
+					<a href="#bidang7" class="tombol_kotak_menu bgkontak"><div class="maskkontak"></div></a>
+				</div>
+			</center>
+		</div>
+		<!-- =============== profil ======================-->
+		<div class="bidang" style="background:#737275;" id="bidang2">
+		<center class="judul_tersembunyi">Profil</center>
+					<div class="bidang_isi_kiri">
+						<h4>Who am I ?</h4>
+						<p>DCS merupakan startup bergerak di bidang IT. Menggarap proyek IT seperti Website Perusahaan, Mobile Aplication, Dekstop dan konsultasi Teknologi.
+						Berdiri sejak tahun 2012, DCS beranggotakan anak - anak IT yang mengenyam pendidikan di Jurusan Teknik Informatika Universitas Diponegoro.
+						Visi ke depan, kami ingin menjadi sturtup yang profesioanl dan mampu bersaing dalam dunia Industri. Menjadi perusahaan bonafit adalah tujuan akhir dari diciptakanya DCS.
+						<br><br>Salam IT!</p>
+					</div>
+					<div class="bidang_isi_kanan" style="background:#B0B1BC">
+						<center><h2>#Teaser</h2></center>
+						<iframe id="video" src="http://www.youtube.com/embed/TuYGYmY0t9g"></iframe>
+					</div>
+		</div>
+		<!--============ layanan ====================-->
+		<div class="bidang" style="background:#111125"id="bidang3">
+		<center class="judul_tersembunyi">Layanan</center>
+			<div id="daftar_layanan">
+				<a href="#bidsng3" onclick="showLayanan('1');return false" id="0">Desain Web</a>
+				<a href="#bidang3" onclick="showLayanan('2');return false" id="1">Aplikasi Mobile</a>
+				<a href="#bidang3" onclick="showLayanan('3');return false" id="2">Aplikasi Dekstop</a>
+			</div>
+		</div>
+		<!--============ karya ====================-->
+		<div class="bidang" style="background:#737275" id="bidang4">
+		<center class="judul_tersembunyi">Karya</center>
+				<div class="kotak_karya_daftar">
+					<div id="daftar_karya">
+						<a href="#kotak_karya_detail" onclick="showDiv('2');return false" id="1"><img class="gambar_karya" src="images/karya/if.png"/></a>
+						<a href="#kotak_karya_detail" onclick="showDiv('1');return false" id="0"><img class="gambar_karya" src="images/karya/bekam.png"/></a>
+						<a href="#kotak_karya_detail" onclick="showDiv('3');return false" id="2"><img class="gambar_karya" src="images/karya/muslimeter.jfif"/></a>
+						<a href="#kotak_karya_detail" onclick="showDiv('4');return false" id="2"><img class="gambar_karya" src="images/karya/tmg.png"/></a>
+					</div>
+				</div>
+				<div id="kotak_karya_detail">
+					<div class="kotak_karya_detail_isi_tampil" id="container1">
+						<h2>Bekam Guide</h2>
+						<p>
+						Merupakan karya pertama, yaitu aplikasi android berisi tentang panduan bekam. Aplikasi ini diikutkan dalam sebuah ajang perlombaan yang disebut Compfest.
+						berhasil lolos putaran final dan mengikuti sesi presentasi di UI Depok.  
+					</p>
+					</div>
+					<div class="kotak_karya_detail_isi_sembunyi"id="container2">
+						<h2>Website IF</h2>
+						<p>
+						Website jurusan Informatika UNDIP, juga termasuk dalam daftar garapan kami. Setelah memenangkan sayembara tingkat jurusan akhirnya pembuatan web jurusan dipercayakan kepada kami.bisa diakses di www.if.undip.ac.id
+					</p>
+					</div>
+					<div class="kotak_karya_detail_isi_sembunyi"id="container3">
+						<h2>Muslimeter</h2>
+						<p>
+						Aplikasi windows phone, berisi tentang catatan amalan dan tahun hijriah. 
+						coba diikutkan lomba namun sayang belum beruntung
+					</p>
+					</div>
+					<div class="kotak_karya_detail_isi_sembunyi"id="container4">
+						<h2>Temanggungan</h2>
+						<p>
+						Sebuah direktori tentang Temanggung, berisi informasi wisata dan sejarah Temanggung. 
+					</p>
+					</div>
+				</div>
+				<script type="text/javascript">
+				</script>
+		</div>
+		<!-- ====================== rekanan ======================= -->
+		<div class="bidang" style="background:#111125" id="bidang5">
+		<center class="judul_tersembunyi">Rekanan</center>
+			<div class="rekanan_kanan" style="">
+				<h4>Rekanan Kami</h4>
+				<a>Sebagai salah satu <i>startup</i> baru DIGIT Creative Studio (DCS) menjalankan kerjasama yang baik dengan rekanan agar semakin produktif
+				dan meningkatkan profesionalisme</a>
+				<hr>
+				<ol>
+					<li>Informatika Undip</li>
+						<p>Informatika Undip adalah mitra yang sangat mendukung perkembangan DCS, selain kerjasama lulusan 
+						kami juga menerima magang dari mahasiswa Informatika Undip.</p>
+					<li>IKITAS Semarang</li>
+						<p>IKITAS menjadi mitra utama dalam perkembangan bisnis kreatif digital. Kami menjalin kerjasama dengan IKITAS untuk meningkatkan strategi bisnis
+						pengembangan proyek kami.</p>
+					<li>Microsoft Student Partner</li>
+						<p>Untuk memperluas jangkauan pengembangan aplikasi MSP menjadi mitra penting. Setiap melakukan pengembangan yang berkaitan dengan teknologi Microsoft, 
+						kami akan meminta dukungan dari MSP.</p>
+					<li>Google Ambassador</li>
+						<p>GSA menjadi mitra bisnis dalam pengembangan aplikasi berbasis android yang dimiliki "Google". Saat ini aplikasi android merupakan hal yang luar biasa dalam segi perkembangan aplikasinya, 
+						selain itu juga menyediakan kesempatan bisnis aplikasi bagi para developer termasuk DCS. Maka dari itu GSA menjadi salah satu mitra yang bisa mendukung kami.</p>
+				</ol>
+			</div>
+			<div class="rekanan_kiri" style=""><img style="width:100%;height:100%"src="images/salaman.gif"/></div>
+		</div>
+		<!-- =================== kerja sama =========================================-->
+		<div class="bidang" style="background:#737275" id="bidang6">
+		<center class="judul_tersembunyi">Kerja Sama</center>
+			<div class="kerjasama_kiri">
+				<h4 align="center">Hak dan Kewajiban Pihak Pertama</h4>
+				<p align="justify">
+					<ul type=1>
+						<li>Pihak pertama wajib memenuhi tanggung jawab sebagai seorang programmer.</li>
+						<li>Sebagai imbalan atas kewajibannya, pihak pertama mendapat imbalan.</li>
+					</ul>
+				</p><br>
+				<h4 align="center">Hak dan Kewajiban Pihak Kedua</h4>
+				<p align="justify">
+					<ul type=1>
+						<li>Pihak kedua wajib memberikan detil pekerjaan yang diberikan.</li>
+						<li>Pihak kedua akan menerima layanan yang terbaik dari pihak pertama.</li>
+					</ul>
+				</p>
+			</div>
+			<div class="kerjasama_kanan" >
+				<h4 align="center">Form Pendaftaran Kerjasama</h4>
+				<div class="paket_form">
+					<p class="label_form">Nama</p>
+					<input class="input_form" type="text" name="nama"/>
+				</div>
+				<div class="paket_form">
+					<p class="label_form">Nama Perusahaan</p>
+					<input class="input_form" type="text" name="nama_perusahaan"/>
+				</div>
+				<div class="paket_form">
+					<p class="label_form">Email</p>
+					<input class="input_form" type="email" name="email"/>
+				</div>
+				<div class="paket_form">
+					<p class="label_form">No. Telepon</p>
+					<input class="input_form" type="number" name="no_telepon"/>
+				</div>
+				<div class="paket_form">
+					<p class="label_form">Alamat</p>
+					<input class="input_form" type="text" name="alamat"/>
+				</div>
+				<div class="paket_form">
+					<input class="tombol_kirim" type="submit" value="Kirim"/>
+				</div>
+			</div>
+		</div>
+		<!-- ================================================= kontak ==============================================-->
+		<div class="bidang" style="background:#111125;padding-bottom:50px"id="bidang7">
+			<div class="isi_kontak">
+				<div class="unit_kontak"><img class="logo_kontak" src="images/icon/facebook-square.png"/><p class="nama_kontak">DCS Studio</p></div>
+				<div class="unit_kontak"><img class="logo_kontak" src="images/icon/twitter.png"/><p class="nama_kontak">@DCS Studio</p></div>
+				<div class="unit_kontak">	<img class="logo_kontak" src="images/icon/mail.png"/><p class="nama_kontak">official@dcs.org</p></div>
+				<div class="unit_kontak"><img class="logo_kontak" src="images/icon/blogger.png"/><p class="nama_kontak">dcs.blog.org</p></div>
+				<div class="unit_kontak"><img class="logo_kontak" src="images/icon/googleplus-square.png"/><p class="nama_kontak">DCS Studio</p></div>
+				<div class="unit_kontak"><img class="logo_kontak" src="images/icon/instagram.png"/><p class="nama_kontak">DCS Studio</p></div>
+				<div class="unit_kontak"><img class="logo_kontak" src="images/icon/linkedin.png"/><p class="nama_kontak">DCS Kreatif</p></div>
+				<div class="unit_kontak"><img class="logo_kontak" src="images/icon/tumblr.png"/><p class="nama_kontak">DCS Kreatif</p></div>
+			</div>
+			<div class="kotak_peta">
+				<div class="isi_peta">
+					<iframe  width="100%"  height="100%"  frameborder="0" style="border:0"  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCR90FYVWUK09b034TjWqbY2QvUqVre0KA &q=perumda+tembalang+semarang"></iframe>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">	
+		//menampilkan bingkai, menu, logo saat discroll
+			$(document).scroll(function () {
+				var y = $(this).scrollTop();
+				if (y > 200) {
+					$('.bingkai').fadeIn('easeOutExpo');
+					$('#bidang1').css('background','#111125');
+					$('#bidang1').css('transition','1s');
+				} else {
+					$('.bingkai').fadeOut('easeInExpo');
+					$('#bidang1').css('background','#454552');
+					$('#bidang1').css('transition','1s');
+				}
+			});
+			$(document).scroll(function () {
+				var y = $(this).scrollTop();
+				if (y > 1000){
+					$('#menu_atas').fadeIn('');
+					$('#menu_atas').css('transition','1s');
+					$('.tempat_logo').css('margin-left','0px');
+					$('.tempat_logo').css('transition','1s');
+					$('.bingkai_atas,.bingkai_kanan,.bingkai_bawah,.bingkai_kiri').css('background','#454552');
+					$('.bingkai_atas,.bingkai_kanan,.bingkai_bawah,.bingkai_kiri').css('transition','1s');
+				} else {
+					$('#menu_atas').fadeOut('easeInExpo');
+					$('#menu_atas').css('transition','0.3s');
+					$('.tempat_logo').css('margin-left','470px');
+					$('.tempat_logo').css('transition','1s');
+					$('.bingkai_atas,.bingkai_kanan,.bingkai_bawah,.bingkai_kiri').css('background','#26292A');
+					$('.bingkai_atas,.bingkai_kanan,.bingkai_bawah,.bingkai_kiri').css('transition','1s');
+				}
+			});
+			//efek sliding pada perpindahan menu
+			$(function() {
+                $('#menu_atas a,.explore_tombol,.kotak_menu_isi a,.tempat_logo a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+            });
+			//menampilkan karya
+			function showLayanan(idInfo) {
+					  var sel = document.getElementById('kotak_detail_layanan').getElementsByTagName('img');
+					  for (var i=0; i<sel.length; i++) {
+						sel[i].style.display = 'none';
+					  }
+					  document.getElementById('layanan'+idInfo).style.display = 'block';
+			}
+			function showDiv(idInfo) {
+					  var sel = document.getElementById('kotak_karya_detail').getElementsByTagName('div');
+					  for (var i=0; i<sel.length; i++) {
+						sel[i].style.display = 'none';
+					  }
+					  document.getElementById('container'+idInfo).style.display = 'block';
+			}
+			
+			
+			//sliding pada dekstop
+			$(function () {
+			  $("#slider4").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 3000,
+				namespace: "callbacks",
+				before: function () {
+				  $('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+				  $('.events').append("<li>after event fired.</li>");
+				}
+			  });
+
+			});
+
+		</script>
+	</body>
+</html>

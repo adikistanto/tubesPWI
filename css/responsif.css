@@ -1,0 +1,27 @@
+@media all and (max-width: 1024px){
+	.menu_atas{display:none}
+	.rekanan_kiri{display:none}
+	.rekanan_kanan{width:85%}
+	.tempat_logo{display:none}
+	.logo_sembunyi{display:block}
+	#menu_atas a{display:none;}
+}
+@media all and (max-width: 768px)  {  
+	.bidang_isi_kanan,.bidang_isi_kiri{width:86%;margin:5%}
+	.kerjasama_kiri,.kerjasama_kanan{width:87%}
+	#kotak_detail_layanan{width:88%; margin:5%;}
+	#daftar_layanan{width:90%; margin:5% 5% 0px 5%}
+	.judul_tersembunyi{display:block;}
+}
+
+
+
+@media all and (max-width: 520px)  {  
+	body{font-size:15px}
+	#dekstop{height:400px;}
+	.tombol_kotak_menu{width:100%;height:50px;}
+	#kotak_karya_detail,.kotak_karya_daftar{width:100%;margin:5px 0px 0px 0px}
+	.kerjasama_kanan{width:83%}
+	.isi_kontak{width:100%}
+
+}

@@ -1,0 +1,479 @@
+@font-face{
+    font-family: 'SciFly-Sans';
+    src:url('../font/SciFly-Sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{font-family:'SciFly-Sans',Open Sans,Helvetica,sans-serif;
+    font-size: 17px;
+	position:relative;
+	top:0px;
+	left:0px;
+	margin:0px;
+}
+.logo{
+	float:right;width:150px;height:auto;margin-top:10px
+}
+#menu_atas{
+	float:right;
+	margin:15px 50px 0px 0px;
+	display:none;
+}
+ #menu_atas a{
+	padding:5px 8px;
+	text-decoration:none;
+	color:#FFF;
+	margin:5px 0px 0px 0px
+}
+#menu_atas a:hover,#menu_atas a:focus{
+	padding:5px 8px;
+	text-decoration:none;
+	color:#FFF;
+	margin:5px 0px 0px 0px;
+	background:#8C9496;
+	transition:1s;
+}
+.bidang{
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+	margin:0px;
+}
+
+.kotak_tengah_isi{
+	width:50%;
+	padding:2%;
+	background:#5E6668;
+	min-width:200px;
+}
+
+.bingkai{
+	display:none;
+}
+.bingkai_atas{
+	position:fixed;
+	top:0px;
+	width:100%;
+	min-height:50px;
+	background:#26292A;
+	transition: width 1s linear 5s;
+	height:66px;
+}
+.bingkai_kiri{
+	position:fixed;
+	left:0px;
+	top:0px;
+	height:100%;
+	width:3%;
+	background:#26292A;
+	transition: width 1s linear 5s;
+}
+.bingkai_kanan{
+	position:fixed;
+	right:0px;
+	top:0px;
+	height:100%;
+	width:3%;
+	background:#26292A;
+	transition: width 1s linear 5s;
+}
+.bingkai_bawah{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	height:7%;
+	background:#26292A;
+	transition: width 1s linear 5s;
+}
+.explore_tombol{
+	padding:2% 5%;
+	background:#476FBA;
+	border-radius:3px;
+	color:#FFF;
+	text-decoration:none;
+	clear:both;
+}
+.judul_tersembunyi{
+	display:none;
+	font-size:20px;
+	padding:10px 10px;
+	background:#26292A;
+	color:#fff;
+	}
+
+/*========================== menu ======================================================*/
+.tombol_kotak_menu{
+	width:30%;
+	height:175px;
+	float:left;
+	margin:10px 10px 0px 0px;
+}
+
+.tombol_kotak_menu:hover>.maskprofil{
+	width:100%;
+	height:100%;
+	float:left;
+}
+.tombol_kotak_menu:hover>.masklayanan {
+	width:100%;
+	height:100%;
+	float:left;
+}
+.tombol_kotak_menu:hover>.maskkarya{
+	width:100%;
+	height:100%;
+	float:left;
+}
+.tombol_kotak_menu:hover>.maskrekanan{
+	width:100%;
+	height:100%;
+	float:left;
+}
+.tombol_kotak_menu:hover>.maskkerjasama{
+	width:100%;
+	height:100%;
+	float:left;
+}
+.tombol_kotak_menu:hover>.maskkontak{
+	width:100%;
+	height:100%;
+	float:left;
+}
+.maskprofil{
+	height:100%;
+	width:0%;
+	background:url('../images/menu/mask/mask_profil.png');
+	background-size:100% 100%;
+	float:left;
+	transition:0.3s;
+	text-align:center;
+}
+.masklayanan{
+	height:100%;
+	width:0%;
+	background:url('../images/menu/mask/mask_layanan.png');
+	background-size:100% 100%;
+	float:left;
+	transition:0.3s;
+	text-align:center;
+}
+.maskkarya{
+	height:100%;
+	width:0%;
+	background:url('../images/menu/mask/mask_karya.png');
+	background-size:100% 100%;
+	float:left;
+	transition:0.3s;
+	text-align:center;
+}
+.maskrekanan{
+	height:100%;
+	width:0%;
+	background:url('../images/menu/mask/mask_rekanan.png');
+	background-size:100% 100%;
+	float:left;
+	transition:0.3s;
+	text-align:center;
+}
+.maskkerjasama{
+	height:100%;
+	width:0%;
+	background:url('../images/menu/mask/mask_kerjasama.png');
+	background-size:100% 100%;
+	float:left;
+	transition:0.3s;
+	text-align:center;
+}
+.maskkontak{
+	height:100%;
+	width:0%;
+	background:url('../images/menu/mask/mask_kontak.png');
+	background-size:100% 100%;
+	float:left;
+	transition:0.3s;
+	text-align:center;
+}
+.kotak_menu_isi{
+	width:80%;
+	padding:10% 0%;
+}
+.tempat_logo{
+	float:left;
+	margin:0px 0px 0px 470px;
+	width:20%;
+	min-width:200px;
+}
+.logo_sembunyi{
+	display:none;
+	width:150px;
+	margin:10px 0px 10px 0px;
+}
+.bidang_isi_kanan{
+	float:left; width:39%;min-width:250px;
+	height:auto;
+	margin:60px 5% 5% 5%;
+	padding:10px;
+}
+.bidang_isi_kiri{
+	float:left; width:39%;min-width:250px;
+	height:auto;
+	margin:60px 0px 0px 5%;
+	padding:10px;
+}
+.bgprofil{
+	background:url('../images/menu/profil.png') no-repeat;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.bglayanan{
+	background:url('../images/menu/galeri.png') no-repeat;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.bgkarya{
+	background:url('../images/menu/karya.png') no-repeat;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.bgrekanan{
+	background:url('../images/menu/rekanan.png') no-repeat;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.bgkerjasama{
+	background:url('../images/menu/kerjasama.png') no-repeat;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.bgkontak{
+	background:url('../images/menu/kontak.png') no-repeat;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+/*=================== Karya ==========================================*/
+.karya_isi{
+	width:90%;
+	margin:5%;
+}
+
+#daftar_karya{
+	margin:7% 5% 0px 5%;
+	width:80%;
+	float:left;
+}
+#daftar_karya a{
+	width:150px;
+	height:150px;
+	background:#515153;
+	float:left;
+	padding:0px;
+	margin:0px 15px 15px 0px;
+	text-decoration:none;
+	line-height:2;padding:2%;
+	color:#000;
+}
+#daftar_karya a:hover,#daftar_karya a:focus{
+	width:150px;
+	height:150px;
+	background:#D6D7DB;
+	float:left;
+	padding:0px;
+	margin:0px 15px 15px 0px;
+	/*border-bottom:15px solid #D6D7DB;*/
+	text-decoration:none;
+	line-height:2;padding:2%;
+	color:#000;
+}
+#kotak_karya_detail{
+	margin:0px 5% 5% 5% ;
+	width:90%;
+	float:left;
+	background:#D6D7DB;
+}
+.kotak_karya_detail_isi_tampil{
+	width:90%;
+	margin:5% 5%;
+	padding:5px;
+}
+.kotak_karya_detail_isi_sembunyi{
+	width:90%;
+	margin:5% 5%;
+	padding:5px;
+	display:none;
+}
+#video{
+	width:90%;
+	height:400px;
+	margin:2% 5% 5% 5%;
+}
+.gambar_karya{
+	width:96%;
+	height:96%;
+}
+/*================ layanan ======================*/
+#daftar_layanan{
+	width:30%;
+	margin:5% 0% 5% 5%;
+	float:left;
+	padding:20px 0px 20px 0px;
+	background:#7B7C7E;
+}
+#daftar_layanan a{
+	width:90%;
+	float:left;
+	padding:20px 5%;
+	clear:both;
+	text-decoration:none;
+	color:#fff;
+}
+#daftar_layanan a:focus{
+	width:90%;
+	float:left;
+	padding:20px 5%;
+	clear:both;
+	text-decoration:none;
+	background:#D2D4D8;
+	color:#26292A;
+}
+#kotak_detail_layanan{
+	width:58%;
+	float:left;
+	margin:5% 5% 5% 0px;
+	padding:1%;
+	background:#D2D4D8;
+}
+.gambar_layanan_tampil{
+	width:100%;
+	height:100%;
+	display:block;
+}
+.gambar_layanan_sembunyi{
+	width:100%;
+	height:100%;
+	display:none;
+}
+/* =============== Kerja Sama =================== */
+.kerjasama_kiri{
+	float:left; width:40%;
+	height:auto;
+	margin:5% 0px 0px 5%;
+	color: white;
+}
+
+.kerjasama_kanan{
+	float:left;
+	width:40%;
+	height:auto;
+	margin:5% 0px 5% 5%;
+	color: white;
+	padding:5px 10px 10px 10px;
+	background:#525356;
+}
+
+.tombol_kirim{
+	background:#26292A;
+	border-radius:4px;
+	color:#fff;
+	float:right;
+	padding:5px 20px;
+	margin:10px 0px 0px 0px;
+}.tombol_kirim:hover{
+	background:#26292A;
+	border-radius:4px;
+	color:#fff;
+	float:right;
+	padding:5px 20px;
+	margin:10px 0px 0px 0px;
+}
+.paket_form{
+	width:96%;
+	float:left;
+	clear:both;
+	margin:0px 2%;
+}
+.label_form{
+	float:left;
+	width:100%;
+	margin:0px;
+	padding:2px 0px;
+}
+.input_form{
+	width:96%;
+	float:left;
+	clear:both;
+	height:30px;
+	padding:0px 5px;
+	border:none;
+}
+.input_form:hover,.input_form:focus{
+	width:96%;
+	float:left;
+	clear:both;
+	height:30px;
+	padding:0px 5px;
+	border:none;
+	box-shadow:2px 2px 4px 1px #737275 inset;
+}
+
+/* =============== rekanan =================== */
+.rekanan_kanan{
+	float:right;
+	padding:20px;
+	background:silver;
+	width:60%;
+	margin-right:80px; 
+	height:auto;
+	margin:5% 5% 5% 5%;
+}
+
+.rekanan_kiri{
+	margin:17% 0px 0px 0px;
+	float:right;
+	width:20%;
+	background:#434B4C;
+	padding:50px 0px;
+	height:auto;
+}
+
+/*= ======================== kontak =====================*/
+.isi_kontak{
+	float:left;
+	width:20%;
+	margin:5%;
+}
+
+.unit_kontak{
+	width:100%;
+	float:left;
+	clear:both;
+
+}
+.logo_kontak{
+	width:50px;
+	height:50px;
+	float:left;
+}
+.nama_kontak{
+	float:left;
+	padding:5px 20px;
+	color:#fff;
+}
+.kotak_peta{
+	width:60%;
+	margin:5%;
+	float:left;
+	height:90%;
+	background:#F3F4F9;
+}
+.kotak_cari_lokasi{
+	width:100%;
+	float:left;
+}
+.isi_peta{
+	clear:both;
+	width:100%;
+	float:left;
+	min-height:500px;
+}
